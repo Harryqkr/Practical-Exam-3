@@ -23,7 +23,8 @@ int Truck_yard::get_total_stock_count()
 }
 int Truck_yard::get_stock_count(int code)
 {
-    return index;
+    b_code = code;
+    return code;
 }
 Truck *Truck_yard::get_current_stock_list()
 {
