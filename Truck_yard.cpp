@@ -23,8 +23,17 @@ int Truck_yard::get_total_stock_count()
 }
 int Truck_yard::get_stock_count(int code)
 {
-    b_code = code;
-    return code;
+    int num=0;
+    for (int i = 0; i < index; i++)
+    {
+        if (truck[i].get_brand_code() == code)
+        {
+            num++;
+        }
+        
+    }
+    return num;
+
 }
 Truck *Truck_yard::get_current_stock_list()
 {
