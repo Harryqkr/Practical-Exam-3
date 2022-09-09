@@ -26,7 +26,7 @@ int Truck_yard::get_stock_count(int code)
     int num=0;
     for (int i = 0; i < index; i++)
     {
-        if (truck[i].get_brand_code() == code)
+        if (trucks[i].get_brand_code() == code)
         {
             num++;
         }
